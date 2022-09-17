@@ -1,2 +1,2 @@
-# myResumeWebsite
-resume-website
+# My Profile Website
+
