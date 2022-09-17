@@ -16,7 +16,6 @@ html {
   height: 100vh;
   width: 100%;
   display: flex;
-  column-gap: 8em;
 }
 .container-left1,
 .container-left2 {
@@ -41,6 +40,7 @@ html {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 0.8fr 0.5fr 0.75fr 0.5fr 1fr 1fr;
+  margin: 1em 8em;
 }
 .r1-content-text > h1 > span {
   font-size: 9rem;
@@ -53,17 +53,17 @@ html {
 }
 .r1-content-text > p:nth-of-type(1) {
   font-size: 2rem;
-  width: 60rem;
+  min-width: 60rem;
   grid-row: 3/4;
 }
 .r1-content-text > p:nth-of-type(2) {
   font-size: 2rem;
-  width: 75rem;
+  min-width: 75rem;
   grid-row: 4/5;
 }
 .r1-content-text > p:nth-of-type(3) {
   font-size: 2rem;
-  width: 75rem;
+  min-width: 75rem;
   grid-row: 5/6;
 }
 .r1-content-text > div {
