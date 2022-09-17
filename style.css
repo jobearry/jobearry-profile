@@ -93,7 +93,7 @@ html {
   height: 96px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 1080px) {
   .main-container {
     grid-template-rows: 100% 100%;
   }
