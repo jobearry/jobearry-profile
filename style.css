@@ -32,11 +32,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container-left1 {
   background-color: #d7b468;
   width: 100%;
+  grid-row: 1/2;
 }
 .container-left1 img {
   height: 650px;
@@ -47,6 +49,7 @@ html {
 .container-left2 {
   background-color: #59a566;
   width: 100%;
+  grid-row: 2/3;
 }
 
 .r1-content-text {
