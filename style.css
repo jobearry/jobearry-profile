@@ -82,7 +82,7 @@ body {
 }*/
 
 @media only screen and (min-width: 768px) {
-  .content-container {
+  .content-container1 {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -91,12 +91,13 @@ body {
     grid-template-columns: 1fr;
   }
   .container-left1 {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: #d7b468;
     align-self: center;
     grid-row: 1/2;
     grid-column: 1/2;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,4 +167,24 @@ body {
   }
 }
 @media only screen and (max-width: 320px) {
+}
+@media (orientation: landscape) {
+  .content-container1 {
+    place-items: initial;
+  }
+  .container-left1 {
+    justify-content: flex-start;
+  }
+  .container-left1 > img {
+    margin-left: 10rem;
+    margin-bottom: 0;
+    height: 400px;
+  }
+  .r1-content-text {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: flex-end;
+    margin: initial;
+    margin-right: 5rem;
+  }
 }
