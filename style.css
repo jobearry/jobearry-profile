@@ -166,9 +166,9 @@ body {
     background-color: antiquewhite;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
 }
-@media (orientation: landscape) {
+/*@media (orientation: landscape) {
   .content-container1 {
     place-items: initial;
   }
@@ -188,3 +188,4 @@ body {
     margin-right: 5rem;
   }
 }
+*/
