@@ -91,7 +91,7 @@ body {
     grid-template-columns: 1fr;
   }
   .container-left1 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #d7b468;
     align-self: center;
