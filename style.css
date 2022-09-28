@@ -101,9 +101,8 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .container-left1 > img,
-  .container-left2 > img {
-    margin-bottom: 26rem;
+  .container-left1 > img {
+    margin-bottom: 27rem;
     height: 600px;
   }
   .r1-content-text {
