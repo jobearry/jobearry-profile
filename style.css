@@ -81,7 +81,7 @@ body {
   height: 96px;
 }*/
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 200px) {
   .content-container {
     height: 100vh;
     width: 100vw;
