@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 /*
 .container-left1,
@@ -91,6 +91,7 @@ body {
   }
   .container-left1 {
     height: 100%;
+    width: 100%;
     background-color: #d7b468;
     align-self: center;
     grid-row: 1/2;
@@ -98,9 +99,8 @@ body {
   }
   .container-left1 > img {
     margin-top: 6em;
-    height: 450px;
-    width: 100vw;
-    background-color: #d7b468;
+    height: 550px;
+    width: 100%;
   }
   .r1-content-text {
     grid-row: 1/2;
@@ -110,7 +110,8 @@ body {
     justify-self: center;
 
     text-align: justify;
-    min-width: 400px;
+    min-width: 60vw;
+    min-height: 300px;
     background-color: #fff1f1;
     margin: 2.5rem auto;
     padding: 1rem;
