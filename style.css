@@ -21,8 +21,8 @@ body {
 .content-container1 {
   grid-row: 1/2;
 
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
 }
 
 .content-container1,
