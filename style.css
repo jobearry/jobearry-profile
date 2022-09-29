@@ -14,19 +14,37 @@ html {
 body {
   overflow-x: clip;
 }
-
-.content-container1 {
-  height: 100vh;
-  width: 100vw;
+.main-container {
   display: grid;
-  place-items: center;
+  grid-template-rows: 1fr;
+}
+.content-container1 {
+  grid-row: 1/2;
 
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 }
+
+.content-container1,
+.content-container2 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container-left1,
+.container-left2 {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container-left1 {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 
   grid-row: 1/2;
   grid-column: 1/2;
@@ -99,11 +117,20 @@ body {
   margin-right: -1rem;
 }
 
+.content-container2 {
+  grid-row: 2/3;
+}
+
+.container-left2 {
+  background-color: #59a566;
+}
 @media only screen and (min-width: 1200px) {
   .content-container1 {
     grid-template-columns: 600px 1fr;
   }
-
+  .container-left1 {
+    width: 100%;
+  }
   .container-left1 > img {
     max-height: 650px;
     margin-bottom: initial;
@@ -130,10 +157,6 @@ body {
 
   .r1-content-bot {
     font-size: 1.5em;
-  }
-
-  .container-left2 > img {
-    background-color: antiquewhite;
   }
 }
 @media only screen and (min-width: 600px) {
