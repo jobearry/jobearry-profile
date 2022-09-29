@@ -162,8 +162,6 @@ html {
   }
 }
 @media only screen and (min-width: 320px) {
-  .content-container1 {
-  }
   .container-left1 > img {
     max-height: 450px;
     margin-bottom: initial;
