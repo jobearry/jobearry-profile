@@ -6,12 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  border: 1px solid red;
 }
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  border: 1px solid red;
 }
 .main-container {
   display: grid;
@@ -21,8 +22,8 @@ html {
 .content-container1 {
   grid-row: 1/2;
 
-  grid-template-rows: 100vh;
-  grid-template-columns: 100vw;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .content-container1,
@@ -119,6 +120,7 @@ html {
 
 .content-container2 {
   grid-row: 2/3;
+  display: none;
 }
 
 .container-left2 {
@@ -160,10 +162,7 @@ html {
   }
 }
 @media only screen and (min-width: 320px) {
-  .main-container {
-  }
   .content-container1 {
-    min-height: 100vh;
   }
   .container-left1 > img {
     max-height: 450px;
