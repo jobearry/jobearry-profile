@@ -11,8 +11,6 @@
 html {
   font-size: 62.5%;
   overflow: hidden;
-
-  border: 1px solid red;
 }
 .main-container {
   display: grid;
@@ -131,10 +129,38 @@ html {
     grid-template-columns: 600px 1fr;
   }
   .container-left1 {
-    width: 100%;
+    min-width: 100%;
   }
   .container-left1 > img {
     max-height: 650px;
+    margin-bottom: initial;
+  }
+  .r1-content-text {
+    min-width: 700px;
+  }
+  .header-text {
+    font-size: 6.5rem;
+  }
+  .subtext {
+    font-size: 2.25rem;
+    margin: -2rem auto 4rem 1.7rem;
+  }
+
+  .r1-content-top > p {
+    font-size: 1.5rem;
+  }
+
+  .r1-content-bot {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-left1 {
+    width: 500px;
+  }
+  .container-left1 > img {
+    max-height: 500px;
     margin-bottom: initial;
   }
   .r1-content-text {
@@ -143,7 +169,8 @@ html {
 
     align-self: center;
 
-    min-width: 700px;
+    min-width: 400px;
+    margin: auto 3rem;
   }
   .header-text {
     font-size: 7.5rem;
@@ -161,7 +188,7 @@ html {
     font-size: 1.5em;
   }
 }
-@media only screen and (min-width: 320px) {
+/*@media only screen and (min-width: 320px) {
   .container-left1 > img {
     max-height: 450px;
     margin-bottom: initial;
