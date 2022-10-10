@@ -4,47 +4,242 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THAN | Resume Website</title>
-    <link rel="stylesheet" href="/ProfileWebsite/style.css" />
+    <title>Jonathan Golimlim | Creative Developer</title>
+    <link
+      rel="stylesheet"
+      href="/rasz-web/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="/rasz-web/style.css" />
+    <script
+      src="/rasz-web/node_modules/bootstrap/dist/js/bootstrap.js"
+      defer
+    ></script>
   </head>
   <body>
     <div class="main-container">
-      <div class="content-container1">
-        <div class="container-left1">
-          <img
-            class="profile-icon"
-            src="/ProfileWebsite/resources/PROFILE ICON.svg"
-            alt="profile-icon"
-          />
-        </div>
-        <div class="r1-content-text">
-          <div class="r1-content-top">
-            <h1><span class="header-text">I'm Than</span> <br /></h1>
-            <h2 class="subtext">JONATHAN RODEL GOLIMLIM</h2>
-            <p>
-              BS Computer Engineering graduate that knows the basics of the web
-              and designs.
-            </p>
-            <p>
-              Most of my basic knowledge came from teaching myself, and from my
-              alma mater, <br />
-              Eulogio "Amang" Rodriguez Institute of Science and Technology.
-            </p>
-            <p>I aim to be the best web designer/developer I can be.</p>
-          </div>
-          <div class="r1-content-bot">
-            <p>Quezon City, Philippines</p>
-            <img src="/ProfileWebsite/resources/loc.svg" alt="" />
-          </div>
-        </div>
+      <!--THE NAVBAR-->
+      <div class="navbar">
+        <nav>
+          <a href="#home"
+            ><img src="/rasz-web/resources/rasz-logo.svg" alt="logo"
+          /></a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="content-container2">
-        <div class="container-left2">
-          <img
-            src="/ProfileWebsite/resources/profile-projects.svg"
-            alt="design-projects"
-          />
-        </div>
+      <div class="content-container">
+        <section id="home" class="home">
+          <div class="intro">
+            <p>Hello, I am</p>
+            <h1>Jonathan Golimlim</h1>
+            <h2>Aspiring Web Developer</h2>
+            <div>
+              <img src="/resources/profile-icon.svg" alt="profile-icon" />
+            </div>
+          </div>
+        </section>
+        <!--
+         _           __     ________ _____    ___  
+        | |        /\\ \   / /  ____|  __ \  |__ \ 
+        | |       /  \\ \_/ /| |__  | |__) |    ) |
+        | |      / /\ \\   / |  __| |  _  /    / / 
+        | |____ / ____ \| |  | |____| | \ \   / /_ 
+        |______/_/    \_\_|  |______|_|  \_\ |____|    
+
+        -->
+        <section id="about-me" class="about-me">
+          <div>
+            <h2>About me</h2>
+            <p>
+              I am Jonathan Rodel Golimlim and I am a graduate of Bachelor of
+              Science in Computer Engineering at
+              <a href="https://earist.edu.ph/" target="_blank">
+                <span>EARIST, Manila </span>
+              </a>
+              . I am from Quezon City, Philippines and I aspire to be a web
+              developer and designer and to become the best at it as I can. You
+              can contact me for job opportunities, collaborations, or if you
+              just need a friend.
+            </p>
+            <img src="/rasz-web/resources/profile-projects.svg" alt="" />
+          </div>
+          <div>
+            <h4>TECH STACK</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Github</li>
+              <li>Netlify</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects" class="projects-container">
+          <div class="projects">
+            <h4>School Projects</h4>
+            <p>Programming</p>
+
+            <div class="school-projects one">
+              <div>
+                <div>
+                  <p>MARUBOOKS: Library Database</p>
+                </div>
+                <img src="/rasz-web/resources/lib-db.png" alt="marubooks" />
+              </div>
+              <div>
+                <div>
+                  <a
+                    href="https://github.com/raszpberry/school-projects.git"
+                    target="_blank"
+                    ><p>Matrix Calculator</p></a
+                  >
+                </div>
+                <img
+                  src="/rasz-web/resources/matrix-cal.png"
+                  alt="matrix-cal"
+                />
+              </div>
+
+              <div>
+                <div>
+                  <p>BANCODE: Banking Database</p>
+                </div>
+                <img src="/rasz-web/resources/banking-db.png" alt="bancode" />
+              </div>
+
+              <div>
+                <div>
+                  <p>Employee Database</p>
+                </div>
+                <img
+                  src="/rasz-web/resources/employee-db.png"
+                  alt="employee-db"
+                />
+              </div>
+
+              <div>
+                <div>
+                  <a href="https://rsquared-films.netlify.app/" target="_blank">
+                    <p>RSQUARED Films</p>
+                  </a>
+                </div>
+                <img
+                  src="/rasz-web/resources/rsqrd-psd.jpg"
+                  alt="convert-number-system"
+                />
+              </div>
+              <div>
+                <div>
+                  <a
+                    href="https://convert-number-system.netlify.app/"
+                    target="_blank"
+                  >
+                    <p>Number System Converter</p>
+                  </a>
+                </div>
+                <img
+                  src="/rasz-web/resources/NumberSystemConvert-JS.png"
+                  alt="convert-number-system"
+                />
+              </div>
+
+              <div>
+                <div>
+                  <a
+                    href="https://raszpberry.github.io/zekimon-web/"
+                    target="_blank"
+                    ><p>Zekimon</p></a
+                  >
+                </div>
+                <img
+                  src="/rasz-web/resources/zekimon-portfolio.png"
+                  alt="convert-number-system"
+                />
+              </div>
+            </div>
+            <p>3D and other designs</p>
+            <div class="school-projects two">
+              <div>
+                <img src="/resources/3D Project 1_ Guitar.jpg" alt="" />
+              </div>
+              <div>
+                <img
+                  src="/resources/3D Project 2_ Guitar Tuning Peg.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="/resources/3D Project 3_ Plug Adapter Assembly.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="/resources/3D Project 4_ Minimalist Keyboard.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+          <footer>
+            <div>
+              <div>
+                <p>
+                  Jonathan Golimlim <br />
+                  © Rasz 2022
+                </p>
+                <div>
+                  <p>
+                    Philippines <br />
+                    Project 6, Quezon City
+                    <br />+63 977 674 1997 <br />
+                    golimlim2209@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <a href="https://twitter.com/traszty" target="_blank">
+                  <img
+                    src="/rasz-web/resources/Socials/Twitter.png"
+                    alt="twitter"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/rasz2209/" target="_blank">
+                  <img
+                    src="/rasz-web/resources/Socials/LinkedIn.png"
+                    alt="linkedin"
+                  />
+                </a>
+                <a href="https://github.com/raszpberry" target="_blank">
+                  <img
+                    src="/rasz-web/resources/Socials/Github.png"
+                    alt="github"
+                  />
+                </a>
+                <a
+                  href="https://app.netlify.com/teams/sar-gol/overview"
+                  target="_blank"
+                  ><img
+                    src="/rasz-web/resources/Socials/netlify.png"
+                    alt="netlify"
+                  />
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
       </div>
     </div>
   </body>
