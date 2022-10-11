@@ -26,7 +26,7 @@ html {
   START OF THE NAV 
   ================*/
 .navbar {
-  width: 100%;
+  width: 100vw;
   height: 4em;
 
   display: flex;
@@ -40,7 +40,6 @@ html {
 }
 nav {
   width: 90%;
-  height: 100%;
   display: flex;
 
   justify-content: space-between;
@@ -108,6 +107,8 @@ section {
 }
 .intro p {
   color: #dd8448;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .intro > div {
   align-self: flex-end;
@@ -233,7 +234,7 @@ section {
   height: 4rem;
   bottom: -1rem;
 
-  background: #77685a;
+  background: #a96639;
   border-radius: unset;
   opacity: 0;
 
@@ -296,4 +297,179 @@ footer p {
 footer > div > div img {
   height: 2rem;
   margin: auto 0.25rem;
+}
+
+/*=====================
+      END OF FOOTER
+  =====================*/
+
+/*=====================
+      MEDIA QUERIES
+  =====================*/
+@media only screen and (max-width: 576px) {
+  /*=====================
+    START OF THE CONTENTS 
+    =====================
+  
+    =====================
+          LAYER 1
+    =====================*/
+  .intro {
+    width: 30rem;
+    height: 35rem;
+    align-items: center;
+  }
+
+  .intro p {
+    align-self: flex-start;
+  }
+
+  .intro > div {
+    margin: 3rem;
+    align-self: center;
+  }
+  /*=====================
+        END OF LAYER 1
+    =====================*/
+
+  /*=====================
+          LAYER 2
+    =====================*/
+
+  .about-me > div {
+    width: 25rem;
+  }
+
+  .about-me > div > img {
+    right: -5rem;
+  }
+  /*=====================
+        END OF LAYER 2
+    =====================*/
+
+  /*=====================
+          LAYER 3
+    =====================*/
+  .projects-container {
+    margin: 0.5rem;
+  }
+
+  .school-projects {
+    width: 25rem;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  /*=====================
+        END OF LAYER 3
+    =====================*/
+
+  /*=====================
+          FOOTER
+    =====================*/
+
+  footer {
+    width: 85%;
+    height: 90%;
+  }
+  /*=====================
+      END OF FOOTER
+  =====================*/
+}
+@media only screen and (max-width: 768px) {
+  /*================
+  START OF THE NAV 
+  ================*/
+  nav {
+    height: 100%;
+    display: flex;
+
+    position: relative;
+  }
+
+  nav ul {
+    width: 60vw;
+    height: 100vh;
+    background-color: #1d1d1d;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: fixed;
+    top: 0rem;
+    right: -2rem;
+    display: none;
+  }
+
+  /*================
+    END OF THE NAV 
+  ================*/
+
+  /*=====================
+    START OF THE CONTENTS 
+    =====================
+  
+    =====================
+          LAYER 1
+    =====================*/
+  .intro {
+    max-width: 40rem;
+    height: 35rem;
+  }
+
+  .intro > div {
+    margin: 3rem;
+  }
+  /*=====================
+        END OF LAYER 1
+    =====================*/
+
+  /*=====================
+          LAYER 2
+    =====================*/
+
+  .about-me > div {
+    max-width: 33rem;
+    margin: 2rem auto;
+  }
+
+  .about-me ul > li {
+    width: 9rem;
+  }
+
+  .about-me > div > img {
+    right: -2rem;
+  }
+  /*=====================
+        END OF LAYER 2
+    =====================*/
+
+  /*=====================
+          LAYER 3
+    =====================*/
+  .projects-container {
+    margin: 0.5rem;
+  }
+
+  .school-projects {
+    max-width: 25rem;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  /*=====================
+        END OF LAYER 3
+    =====================*/
+
+  /*=====================
+          FOOTER
+    =====================*/
+
+  footer {
+    width: 85%;
+    height: 90%;
+  }
+  /*=====================
+      END OF FOOTER
+  =====================*/
 }
