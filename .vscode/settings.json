@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.NoBrowser": false
+  "liveServer.settings.NoBrowser": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
 }

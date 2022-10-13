@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,7 +13,8 @@ html {
 }
 /*================
      ANIMATIONS
-  ================*/
+  ================
+*/
 @keyframes left-to-right {
   0% {
     left: -100%;
@@ -25,7 +27,8 @@ html {
 
 /*================
   START OF THE NAV 
-  ================*/
+  ================
+*/
 .navbar {
   width: 100vw;
   height: 4em;
@@ -41,11 +44,11 @@ html {
 nav {
   width: 90%;
   display: flex;
-
+  align-items: center;
   justify-content: space-between;
 }
 nav img {
-  width: 4rem;
+  width: 3rem;
   height: 3rem;
 }
 
@@ -53,7 +56,6 @@ nav ul {
   display: flex;
 
   list-style: none;
-  margin: auto 1rem;
 }
 nav li {
   margin: auto 1rem;
@@ -68,20 +70,19 @@ nav ul a:hover {
 nav > a {
   font-weight: bold;
 }
-nav > a:hover {
-  color: #dbd7d7;
+nav > a > div {
+  display: flex;
+  align-items: center;
 }
-/*================
-    END OF THE NAV 
-    ================*/
 
 /*=====================
-    START OF THE CONTENTS 
-    =====================
+  START OF THE CONTENTS 
+  =====================
     
-    =====================
-          LAYER 1
-    =====================*/
+  =====================
+        LAYER 1
+  =====================
+*/
 
 section {
   width: 100vw;
@@ -89,6 +90,7 @@ section {
   scroll-margin: top 6em;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .home {
@@ -126,11 +128,10 @@ section {
   height: 13rem;
 }
 /*=====================
-          LAYER 2
-    =====================*/
-section {
-  flex-direction: column;
-}
+        LAYER 2
+  =====================
+*/
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -140,6 +141,7 @@ section {
   width: 40rem;
   margin: 2rem;
   position: relative;
+  background-color: #a96639;
 }
 .about-me > div:first-child > h2,
 .about-me > div:first-child > p {
@@ -186,8 +188,9 @@ section {
   opacity: 0.3;
 }
 /*=====================
-          LAYER 3
-    =====================*/
+        LAYER 3
+  =====================
+*/
 
 .projects-container {
   justify-content: center;
@@ -277,8 +280,9 @@ section {
 }
 
 /*=====================
-          FOOTER
-    =====================*/
+        FOOTER
+  =====================
+*/
 .contacts {
   height: 40vh;
   background: #1f1f1f;
@@ -288,22 +292,36 @@ footer {
   width: 90%;
   height: 100%;
   margin: 1.5rem;
+
+  display: grid;
+
+  grid-template-rows: 1fr;
 }
 
-footer > div {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+footer .foot-socials,
+footer .foot-logo {
+  grid-row: 2/3;
 }
 
-footer p {
+footer .foot-details > ul {
+  list-style: none;
   font-size: 0.75rem;
 }
 
-footer > div > div img {
+footer .foot-socials img {
   height: 2rem;
-  margin: auto 0.25rem;
+  margin: 0.25rem;
+}
+footer .foot-logo {
+  display: flex;
+  align-items: center;
+  place-self: center;
+  margin-top: -4rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+footer .foot-logo img {
+  height: 5rem;
 }
 
 /*=====================
@@ -317,6 +335,7 @@ footer > div > div img {
   /*================
   START OF THE NAV 
   ================*/
+
   nav {
     height: 100%;
     display: flex;
