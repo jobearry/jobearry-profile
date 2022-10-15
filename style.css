@@ -4,7 +4,8 @@
 }
 
 section {
-  scroll-margin-top: 2rem;
+  margin: 3rem auto;
+  scroll-margin-top: 3rem;
 }
 section:nth-of-type(3) {
   scroll-margin-top: 6rem;
