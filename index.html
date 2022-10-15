@@ -64,7 +64,7 @@
     <!--END OF THE NAVBAR-->
 
     <!--INTRODUCTION-->
-    <section id="home" style="background: #1a1a1a">
+    <section id="home" style="background: #1a1a1a; height: 100vh">
       <div class="container-lg pt-5 pt-md-0">
         <div
           class="row justify-content-center align-items-center"
@@ -80,7 +80,9 @@
             </h1>
           </div>
 
-          <div class="col-md-3 text-center align-center">
+          <div
+            class="col-md-3 text-center align-self-start align-self-md-center"
+          >
             <img
               class="rounded img-fluid"
               src="resources/profile-icon.svg"
@@ -95,12 +97,14 @@
 
     <!--ABOUT ME-->
     <section id="about-me">
-      <div class="container-lg mt-5 pt-5">
+      <div class="container-lg">
         <div
-          class="row justify-content-center align-items-left"
+          class="row justify-content-center align-items-center"
           style="height: 100vh"
         >
-          <div class="col-md-7 text-center text-md-start position-relative">
+          <div
+            class="col-10 col-md-5 text-center text-md-start position-relative mt-5"
+          >
             <h2>
               <div
                 class="display-6 fw-bold text-uppercase text-center text-md-start"
@@ -110,160 +114,301 @@
             </h2>
             <p>
               I am Jonathan Rodel Golimlim and I am a graduate of Bachelor of
-              Science in Computer Engineering at
-              <a
-                href="https://earist.edu.ph/"
-                target="_blank"
-                style="text-decoration: none"
-              >
-                <span class="" style="color: #db8346">EARIST, Manila </span>
-              </a>
-              . I am from Quezon City, Philippines and I aspire to be a web
-              developer and designer and to become the best at it as I can. You
-              can contact me for job opportunities, collaborations, or if you
-              just need a friend.
+              Science in Computer Engineering. I am from Quezon City,
+              Philippines and I aspire to be a web developer and designer and to
+              become the best at it as I can. You can contact me for job
+              opportunities, collaborations, or if you just need a friend.
             </p>
             <img
               class="position-absolute top-0 end-0"
               src="resources/profile-projects.svg"
               alt="works"
-              style="height: 15rem; z-index: -1; opacity: 0.5"
+              style="height: 15rem; z-index: -1; opacity: 0.25"
             />
           </div>
-          <div class="col-md-10">
-            <h4><div class="fw-bold">TECH STACK</div></h4>
-            <ul class="list-group list-group-horizontal-lg">
-              <li class="list-group-item">HTML</li>
-              <li class="list-group-item">CSS</li>
-              <li class="list-group-item">JavaScript</li>
-              <li class="list-group-item">Github</li>
-              <li class="list-group-item">Netlify</li>
-              <li class="list-group-item">Photoshop</li>
-              <li class="list-group-item">Illustrator</li>
-              <li class="list-group-item">Figma</li>
-            </ul>
+          <div class="col-10 col-md-5">
+            <h4>
+              <div class="text-center text-md-start" style="color: #db8346">
+                TECH STACK
+              </div>
+            </h4>
+
+            <div class="container-expand-lg">
+              <ul class="tech-stack list-group fw-bold">
+                <li
+                  class="border-0 list-group-item d-flex flex-wrap justify-content-center"
+                >
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-3 col-md-5"
+                    style="height: 3rem"
+                  >
+                    HTML
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-3 col-md-5"
+                    style="height: 3rem"
+                  >
+                    CSS
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-4 col-md-5"
+                    style="height: 3rem"
+                  >
+                    JavaScript
+                  </div>
+
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-4 col-md-5"
+                    style="height: 3rem"
+                  >
+                    Photoshop
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-4 col-md-5"
+                    style="height: 3rem"
+                  >
+                    Illustrator
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-2 col-md-5"
+                    style="height: 3rem"
+                  >
+                    Figma
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-6 col-md-5"
+                    style="height: 3rem"
+                  >
+                    Github
+                  </div>
+                  <div
+                    class="rounded-0 justify-content-center align-items-center m-2 border card col-10 col-sm-4 col-md-5"
+                    style="height: 3rem"
+                  >
+                    Netlify
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        
       </div>
     </section>
     <!--END OF ABOUT ME-->
 
     <!--MY PROJECTS-->
-    <section id="projects" class="projects-container">
-      <div class="container-lg pt-5 pt-md-0">
-        <h4>School Projects</h4>
-        <!-- <p>Programming</p> -->
+    <section id="projects">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div>
+            <h4><div class="display-6 fw-bold">Recent Projects</div></h4>
+          </div>
+          <p class="text-muted text-center text-md-start">Programming</p>
+          <div class="row justify-content-center mb-5">
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src="resources/projects (3).png"
+                    alt="rsquared-films"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    href="https://rsquared-films.netlify.app/"
+                    target="_blank"
+                    style="text-decoration: none"
+                  >
+                    <h6 class="card-title">RSQUARED Films</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-        <div class="school-projects">
-          <div class="desktop-apps">
-            <div>
-              <a
-                href="https://github.com/raszpberry/school-projects.git"
-                target="_blank"
-                ><p>Matrix Calculator</p></a
-              >
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <img src="resources/projects (4).png" alt="zekimon-portfolio" />
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    href="https://raszpberry.github.io/zekimon-web/"
+                    target="_blank"
+                    style="text-decoration: none"
+                    ><h6 class="card-title">Zekimon Portfolio</h6></a
+                  >
+                </div>
+              </div>
             </div>
-            <img src="resources/matrix-cal.png" alt="matrix-cal" />
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <img
+                  src="resources/projects (6).png"
+                  alt="convert-number-system"
+                />
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    href="https://convert-number-system.netlify.app/"
+                    target="_blank"
+                    style="text-decoration: none"
+                  >
+                    <h6 class="card-title">Number System Converter</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <img src="resources/projects (1).png" alt="banking-system" />
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    target="_blank"
+                    style="text-decoration: none"
+                    ><h6 class="card-title">Bancode</h6></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <img src="resources/projects (7).png" alt="library-database" />
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    target="_blank"
+                    style="text-decoration: none"
+                    ><h6 class="card-title">Marubooks</h6></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top align-self-center"
+                  src="resources/projects (5).png"
+                  alt="matrix-cal"
+                />
+                <div class="card-body text-center">
+                  <a
+                    class="text-dark"
+                    href="https://github.com/raszpberry/school-projects.git"
+                    target="_blank"
+                    style="text-decoration: none"
+                    ><h6 class="card-title">Matrix Calculator</h6></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="websites">
-            <div>
-              <a href="https://rsquared-films.netlify.app/" target="_blank">
-                <p>RSQUARED Films</p>
-              </a>
+          <p class="text-muted text-center text-md-start">
+            3D and other designs
+          </p>
+          <div class="row justify-content-center ">
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src="resources/3D Project 1_ Guitar.jpg"
+                    alt="3d-guitar"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="card-title">Guitar Assembly</h6>
+                </div>
+              </div>
             </div>
-            <img src="resources/rsqrd-psd.jpg" alt="convert-number-system" />
-          </div>
-          <div class="websites">
-            <div>
-              <a
-                href="https://convert-number-system.netlify.app/"
-                target="_blank"
-              >
-                <p>Number System Converter</p>
-              </a>
-            </div>
-            <img
-              src="resources/NumberSystemConvert-JS.png"
-              alt="convert-number-system"
-            />
-          </div>
 
-          <div class="websites">
-            <div>
-              <a
-                href="https://raszpberry.github.io/zekimon-web/"
-                target="_blank"
-                ><p>Zekimon Portfolio</p></a
-              >
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src="resources/3D Project 2_ Guitar Tuning Peg.jpg"
+                    alt="3d-guitar-tuning-peg"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="card-title">Guitar Tuning Peg</h6>
+                </div>
+              </div>
             </div>
-            <img
-              src="resources/zekimon-portfolio.png"
-              alt="convert-number-system"
-            />
-          </div>
-        </div>
-        <!-- <p>3D and other designs</p> -->
-        <div class="school-projects">
-          <div class="designs">
-            <img src="resources/3D Project 1_ Guitar.jpg" alt="" />
-          </div>
-          <div class="designs">
-            <img src="resources/3D Project 2_ Guitar Tuning Peg.jpg" alt="" />
-          </div>
-          <div class="designs">
-            <img
-              src="resources/3D Project 3_ Plug Adapter Assembly.jpg"
-              alt=""
-            />
-          </div>
-          <div class="designs">
-            <img src="resources/3D Project 4_ Minimalist Keyboard.jpg" alt="" />
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src="resources/3D Project 3_ Plug Adapter Assembly.jpg"
+                    alt="3d-plug"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="card-title">Plug Adapter</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src="resources/3D Project 4_ Minimalist Keyboard.jpg"
+                    alt="3d-keyboard"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="card-title">Minimalist Keyboard</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card border-0">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src=""
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-body text-center">
+                  <h6 class="card-title"></h6>
+                </div>
+              </div>
+            </div>
+           <div class="col-10 col-md-7 col-lg-3 m-1">
+              <div class="card border-0">
+                <div class="">
+                  <img
+                    class="card-img-top img-fluid align-self-center"
+                    src=""
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-body text-center">
+                  <h6 class="card-title"></h6>
+                </div>
+              </div>
+            </di>
+
           </div>
         </div>
       </div>
     </section>
     <!--END OF MY PROJECTS-->
-
-    <!--CONTACTS-->
-    <section id="contacts" class="contacts">
-      <footer>
-        <div class="foot-details">
-          <ul>
-            <li>Jonathan Golimlim</li>
-            <li>© Rasz 2022</li>
-          </ul>
-          <ul>
-            <li>Philippines</li>
-            <li>Project 6, Quezon City</li>
-          </ul>
-          <ul>
-            <li>+63 916 272 6939</li>
-            <li>golimlim2209@gmail.com</li>
-          </ul>
-        </div>
-        <div class="foot-socials">
-          <a href="https://twitter.com/traszty" target="_blank">
-            <img src="resources/Socials/Twitter.png" alt="twitter" />
-          </a>
-          <a href="https://www.linkedin.com/in/rasz2209/" target="_blank">
-            <img src="resources/Socials/LinkedIn.png" alt="linkedin" />
-          </a>
-          <a href="https://github.com/raszpberry" target="_blank">
-            <img src="resources/Socials/Github.png" alt="github" />
-          </a>
-          <a
-            href="https://app.netlify.com/teams/sar-gol/overview"
-            target="_blank"
-            ><img src="resources/Socials/netlify.png" alt="netlify" />
-          </a>
-        </div>
-        <div class="foot-logo">
-          <img class="logo" src="resources/rasz-logo.svg" alt="logo" />
-          <span>RASZ</span>
-        </div>
-      </footer>
-    </section>
-    <!--END OF CONTACTS-->
   </body>
 </html>
