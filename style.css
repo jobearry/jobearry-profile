@@ -1,10 +1,5 @@
-.tech-stack > li > div:hover {
-  background: #1d1d1d;
-  color: #ffffff;
-}
-
 section {
-  margin: 3rem auto;
+  margin-top: 3rem;
   scroll-margin-top: 3rem;
 }
 section:nth-of-type(3) {
