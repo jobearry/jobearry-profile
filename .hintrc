@@ -3,7 +3,17 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off",
-    "no-inline-styles": "off"
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
   }
 }
