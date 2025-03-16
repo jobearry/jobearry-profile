@@ -1,4 +1,5 @@
 import BurgerMenu from './Burger/Burger';
+import logo from '../../../assets/joby-logo.svg';
 import './Navbar.css';
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
         <div className='container mx-auto flex items-center'>
           <img
             className='h-14' 
-            src='src\assets\joby-logo.svg' alt="joby-logo"
+            src={logo} alt="joby-logo"
           />
           <p className='hidden'>
             <strong className='text-slate-400'>Jonathan</strong>
