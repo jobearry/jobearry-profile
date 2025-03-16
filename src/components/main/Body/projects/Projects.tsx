@@ -2,10 +2,10 @@ import todo from '../../../../assets/todo.png'
 import employee_mgt from '../../../../assets/employee-mgt.png'
 import { projects } from '../../../../models/project'
 
-const Projects = () => {
+const Projects: React.FC<{id:string}> = ({id}) => {
   const projectImg = [todo, employee_mgt]
   return (
-    <div className='flex flex-col lg:flex-row justify-center items-center bg-slate-800'>
+    <div id={id} className='flex flex-col lg:flex-row justify-center items-center bg-slate-800'>
       {projects.map((project, index) =>
         <div className='max-w-sm m-2 border border-slate-300 rounded overflow-hidden shadow-lg my-8 bg-slate-600'>
           <img className='w-full' src={projectImg[index]} alt='Project Image' />
