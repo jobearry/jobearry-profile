@@ -1,0 +1,8 @@
+.headline{
+  height: calc(100vh - 64px);
+  scroll-margin-top: 64px;
+}
+
+.text-orange-700{
+  color: #b9571d !important;
+}
