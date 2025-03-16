@@ -4,11 +4,11 @@ import Projects from './projects/Projects';
 // interface BodyProps {
 //   id: string;
 // }
-const Body: React.FC = () => {
+const Body = () => {
   return (
     <>
       <Home id='home'></Home>
-      <Projects id="projects"></Projects>
+      <Projects></Projects>
     </>
   );
 }

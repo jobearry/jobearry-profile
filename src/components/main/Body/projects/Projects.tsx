@@ -1,8 +1,8 @@
 import todo from '../../../../assets/todo.png'
 import employee_mgt from '../../../../assets/employee-mgt.png'
-import { Project, projects } from '../../../../models/project'
+import { projects } from '../../../../models/project'
 
-const Projects: React.FC<Project> = () => {
+const Projects = () => {
   const projectImg = [todo, employee_mgt]
   return (
     <div className='flex flex-col lg:flex-row justify-center items-center bg-slate-800'>
